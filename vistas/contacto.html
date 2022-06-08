@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" id="inicio">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<title>Contacto</title>
+</head>
+<body>
+	<header class="header">
+		<img class="header__image" src="../assets/img/logo.png" alt="Logo">
+		<nav class="header__nav">
+			<ul class="header__list">
+				<li class="header__item"><a class="btn header__link" href="../index.html">Inicio</a></li>
+				<li class="header__item"><a class="btn header__link" href="nosotros.html">Nosotros</a></li>
+				<li class="header__item"><a class="btn header__link" href="futbol.html">Futbol</a></li>
+				<li class="header__item"><a class="btn header__link" href="ayuda.html">Ayuda</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="informacion">
+		<form action="" class="informacion__data" method="get" enctype="text/plain">
+			<fieldset>
+				<legend>Que noticias queres recibir?</legend>
+					<div>
+						<label for="nombre" placeholder="Escriba su nombre">Nombre</label>
+						<input type="text" name="userNombre" id="nombre" required>
+					</div>
+					<div>
+						<label for="email" placeholder="Escriba su email">Email</label>
+						<input type="email" name="userEmail" id="email" required>
+					</div>
+					<div>
+						<label for="novedades">Novedades del dia</label>
+						<input type="checkbox" name="userNovedades" id="novedades">
+					</div>
+					<div>
+						<label for="tiempo">El Tiempo</label>
+						<input type="checkbox" name="userTiempo" id="tiempo">
+					</div>
+					<div>
+						<label for="futbol">Futbol</label>
+						<input type="checkbox" name="userFutbol" id="futbol">
+					</div>
+					<div class="informacion__send">
+						<input type="submit" class="btn" name="ENVIAR">
+						<input type="reset" class="btn" name="LIMPIAR">
+					</div>
+			</fieldset>
+		</form>
+	</main>
+
+	<footer class="footer">
+		<img class="footer__image" src="../assets/img/logo.png" alt="Logo">
+		<nav class="footer__nav">
+			<ul class="footer__list">
+				<li class="footer__item"><a class="btn footer__link" href="../index.html">Inicio</a></li>
+				<li class="footer__item"><a class="btn footer__link" href="nosotros.html">Nosotros</a></li>
+				<li class="footer__item"><a class="btn footer__link" href="futbol.html">Futbol</a></li>
+				<li class="footer__item"><a class="btn footer__link" href="ayuda.html">Ayuda</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>
