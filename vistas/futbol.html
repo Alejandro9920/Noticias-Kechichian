@@ -6,19 +6,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 	<title>Futbol</title>
 </head>
 <body>
 	 
-	<header class="header">
-		<img class="header__image" src="../assets/img/logo.png" alt="Logo">
-		<nav class="header__nav">
-			<ul class="header__list">
-				<li class="header__item"><a class="btn header__link" href="../index.html">Inicio</a></li>
-				<li class="header__item"><a class="btn header__link" href="nosotros.html">Nosotros</a></li>
-				<li class="header__item"><a class="btn header__link" href="contacto.html">Contacto</a></li>
-				<li class="header__item"><a class="btn header__link" href="ayuda.html">Ayuda</a></li>
-			</ul>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-light justify-content-md-center justify-content-start">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarSupportedContent">
+		      <ul class="navbar-nav mx-auto text-md-center text-left">
+		        <li class="nav-item">
+					<a class="nav-link" href="../index.html">Inicio</a>
+				</li>
+		        <li class="nav-item">
+		        	<a class="nav-link" href="nosotros.html">Nosotros</a>
+		        </li>
+				<li class="nav-item">
+					<a class="nav-link" href="contacto.html">Contacto</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="ayuda.html">Ayuda</a>
+				</li>
+		      </ul>
+		    </div>
+		  </div>
 		</nav>
 	</header>
 
@@ -42,10 +58,9 @@
 		<img class="footer__image" src="../assets/img/logo.png" alt="Logo">
 		<nav class="footer__nav">
 			<ul class="footer__list">
-				<li class="footer__item"><a class="btn footer__link" href="../inicio.html">Inicio</a></li>
-				<li class="footer__item"><a class="btn footer__link" href="nosotros.html">Nosotros</a></li>
-				<li class="footer__item"><a class="btn footer__link" href="contacto.html">Contacto</a></li>
-				<li class="footer__item"><a class="btn footer__link" href="ayuda.html">Ayuda</a></li>
+				<li class="footer__item"><i class="bi bi-instagram"></i></li>
+				<li class="footer__item"><i class="bi bi-twitter"></i></li>
+				<li class="footer__item"><i class="bi bi-facebook"></i></li>
 			</ul>
 		</nav>
 	</footer>
