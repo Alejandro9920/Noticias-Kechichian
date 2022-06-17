@@ -1,0 +1,50 @@
+$color: tomato;
+$centro: center;
+$px_pd: 50px;
+$flex: flex;
+$ancho: 500px;
+$top_pd: 15px;
+$color_sombra: #333;
+$color_header: green;
+$ancho_escala: 75%;
+$pd: 2%;
+$color_title: white;
+$tamano_font: 2rem;
+$izquierda: left;
+$ancho_img: 250px;
+
+.jugador{
+	text-align: $centro;
+	padding: $px_pd;
+	display: $flex;
+	justify-content: $centro;
+
+    &__card{
+        background-color: $color;
+        width: $ancho;
+        padding-top: $top_pd;
+        box-shadow: 0px 5px 10px $color_sombra;
+    }
+    
+    &__sombra{
+        filter: drop-shadow(0 5px 10px $color_sombra);
+    }
+
+    &__header{
+        background-color: $color_header;
+        width: $ancho_escala;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+        padding: $pd;
+    }
+
+    &__title{
+        color: $color_title;
+	    font-size: $tamano_font; 
+	    text-align: $izquierda;
+    }
+
+    &__image{
+        width: $ancho_img;
+    }
+
+}
