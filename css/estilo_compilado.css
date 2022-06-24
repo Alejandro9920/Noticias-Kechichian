@@ -1,23 +1,29 @@
 .jugador {
-  text-align: center;
-  padding: 50px;
   display: flex;
+  text-align: center;
   justify-content: center; }
-  .jugador__card {
-    background-color: tomato;
-    width: 500px;
-    padding-top: 15px;
-    box-shadow: 0px 5px 10px #333; }
-  .jugador__sombra {
-    filter: drop-shadow(0 5px 10px #333); }
-  .jugador__header {
-    background-color: green;
-    width: 75%;
-    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
-    padding: 2%; }
-  .jugador__title {
-    color: white;
-    font-size: 2rem;
-    text-align: left; }
-  .jugador__image {
-    width: 250px; }
+
+.jugador__card {
+  background-color: tomato;
+  width: 500px;
+  padding-top: 15px;
+  box-shadow: 0px 5px 10px #333; }
+
+.jugador__sombra {
+  filter: drop-shadow(0 5px 10px #333); }
+
+.jugador__header {
+  background-color: green;
+  width: 75%;
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%); }
+
+.jugador__title {
+  color: white;
+  font-size: 2rem;
+  text-align: left; }
+
+.jugador__image {
+  width: 250px; }
+
+.jugador, .jugador__header {
+  padding: 2%; }

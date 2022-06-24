@@ -1,6 +1,5 @@
 $color: tomato;
 $centro: center;
-$px_pd: 50px;
 $flex: flex;
 $ancho: 500px;
 $top_pd: 15px;
@@ -13,38 +12,75 @@ $tamano_font: 2rem;
 $izquierda: left;
 $ancho_img: 250px;
 
-.jugador{
-	text-align: $centro;
-	padding: $px_pd;
+$colores: (
+    "color-card": $color,
+    "color-header": $color_header
+);
+
+@mixin alinea-centro {
+    text-align: $centro;
+    justify-content: $centro;
+}
+
+%jugador {
 	display: $flex;
-	justify-content: $centro;
+    @include alinea-centro();
+}
+
+%jugador-card {
+    background-color: map-get($colores, 'color-card');
+    width: $ancho;
+    padding-top: $top_pd;
+    box-shadow: 0px 5px 10px $color_sombra;
+}
+
+%jugador-sombra {
+    filter: drop-shadow(0 5px 10px $color_sombra);
+}
+
+%jugador-header {
+    background-color: map-get($colores, 'color-header');
+    width: $ancho_escala;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+}
+
+%jugador-title {
+    color: $color_title;
+	font-size: $tamano_font; 
+	text-align: $izquierda;
+}
+
+%jugador-image {
+    width: $ancho_img;
+}
+
+%jugador-pd {
+    padding: $pd;
+}
+
+.jugador{
+	@extend %jugador;
+    @extend %jugador-pd;
 
     &__card{
-        background-color: $color;
-        width: $ancho;
-        padding-top: $top_pd;
-        box-shadow: 0px 5px 10px $color_sombra;
+        @extend %jugador-card;
     }
     
     &__sombra{
-        filter: drop-shadow(0 5px 10px $color_sombra);
+        @extend %jugador-sombra;
     }
 
     &__header{
-        background-color: $color_header;
-        width: $ancho_escala;
-        clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
-        padding: $pd;
+        @extend %jugador-header;
+        @extend %jugador-pd;    
     }
 
     &__title{
-        color: $color_title;
-	    font-size: $tamano_font; 
-	    text-align: $izquierda;
+        @extend %jugador-title;    
     }
 
     &__image{
-        width: $ancho_img;
+        @extend %jugador-image;
     }
 
 }
