@@ -5,63 +5,100 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<meta name ="description" content="TE MANTENEMOS INFORMADO TODO EL DIA A TODA HORA">
+	<meta name=”keywords” content="NOTICIAS, INFORMACION, FUTBOL, ULTIMA HORA, SUCEDE, MOMENTO, ULTIMO, NOVEDAD, SABER, AHORA">
 	<title>Contacto</title>
 </head>
 <body>
-	<header class="header">
-		<img class="header__image" src="../assets/img/logo.png" alt="Logo">
-		<nav class="header__nav">
-			<ul class="header__list">
-				<li class="header__item"><a class="btn header__link" href="../index.html">Inicio</a></li>
-				<li class="header__item"><a class="btn header__link" href="nosotros.html">Nosotros</a></li>
-				<li class="header__item"><a class="btn header__link" href="futbol.html">Futbol</a></li>
-				<li class="header__item"><a class="btn header__link" href="ayuda.html">Ayuda</a></li>
-			</ul>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-light justify-content-md-center justify-content-start">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarSupportedContent">
+		      <ul class="navbar-nav mx-auto text-md-center text-left">
+		        <li class="nav-item">
+		        	<a class="nav-link" href="../index.html">Inicio</a>
+		        </li>
+				<li class="nav-item">
+					<a class="nav-link" href="nosotros.html">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="futbol.html">Futbol</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="ayuda.html">Ayuda</a>
+				</li>
+		      </ul>
+		    </div>
+		  </div>
 		</nav>
 	</header>
 
-	<main class="informacion">
-		<form action="" class="informacion__data" method="get" enctype="text/plain">
-			<fieldset>
-				<legend>Que noticias queres recibir?</legend>
-					<div>
-						<label for="nombre" placeholder="Escriba su nombre">Nombre</label>
-						<input type="text" name="userNombre" id="nombre" required>
+	<div class="col-md-12 container">
+	  	<div class="row">
+		    <div class="col-xs-12 col-md-12 col-lg-6">
+				<div class="card">
+					<div class="card-body">
+	    				<h5 class="card-title">Que noticias queres recibir?</h5>
+	    				<br>
+						<form action="" method="get" enctype="text/plain">
+						  <div class="row mb-3">
+						    <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="inputNombre">
+						    </div>
+						  </div>
+						  <div class="row mb-3">
+						    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+						    <div class="col-sm-10">
+						      <input type="email" class="form-control" id="inputEmail3">
+						    </div>
+						  </div>
+						  <fieldset class="row mb-3">
+						    <div class="col-sm-10">
+						      <div class="form-check">
+						        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+						        <label class="form-check-label" for="gridRadios1">
+						          Novedades del día
+						        </label>
+						      </div>
+						      <div class="form-check">
+						        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+						        <label class="form-check-label" for="gridRadios2">
+						          El tiempo
+						        </label>
+						      </div>
+						      <div class="form-check disabled">
+						        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+						        <label class="form-check-label" for="gridRadios3">
+						          Futbol
+						        </label>
+						      </div>
+						    </div>
+						  </fieldset>
+						  <button type="submit" class="btn btn-primary">Enviar</button>
+						</form>
 					</div>
-					<div>
-						<label for="email" placeholder="Escriba su email">Email</label>
-						<input type="email" name="userEmail" id="email" required>
-					</div>
-					<div>
-						<label for="novedades">Novedades del dia</label>
-						<input type="checkbox" name="userNovedades" id="novedades">
-					</div>
-					<div>
-						<label for="tiempo">El Tiempo</label>
-						<input type="checkbox" name="userTiempo" id="tiempo">
-					</div>
-					<div>
-						<label for="futbol">Futbol</label>
-						<input type="checkbox" name="userFutbol" id="futbol">
-					</div>
-					<div class="informacion__send">
-						<input type="submit" class="btn" name="ENVIAR">
-						<input type="reset" class="btn" name="LIMPIAR">
-					</div>
-			</fieldset>
-		</form>
-	</main>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer class="footer">
 		<img class="footer__image" src="../assets/img/logo.png" alt="Logo">
 		<nav class="footer__nav">
 			<ul class="footer__list">
-				<li class="footer__item"><a class="btn footer__link" href="../index.html">Inicio</a></li>
-				<li class="footer__item"><a class="btn footer__link" href="nosotros.html">Nosotros</a></li>
-				<li class="footer__item"><a class="btn footer__link" href="futbol.html">Futbol</a></li>
-				<li class="footer__item"><a class="btn footer__link" href="ayuda.html">Ayuda</a></li>
+				<li class="footer__item"><i class="bi bi-instagram"></i></li>
+				<li class="footer__item"><i class="bi bi-twitter"></i></li>
+				<li class="footer__item"><i class="bi bi-facebook"></i></li>
 			</ul>
 		</nav>
 	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
